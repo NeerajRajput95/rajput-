@@ -29,33 +29,32 @@
 
 // // //GETELEMEMTBYCLASSNAME//
 
-// var items=document.getElementsByClassName('list-group-item');
-// console.log(items);
-// console.log(items[1]);
-// items[1].textContent= 'Hello2';
-// items[1].style.fontWeight= 'bold';
-// items[2].style.backgroundColor= 'green';
+var items=document.getElementsByClassName('list-group-item');
+console.log(items);
+console.log(items[1]);
+items[1].textContent= 'Hello2';
+items[1].style.fontWeight= 'bold';
+items[2].style.backgroundColor= 'green';
 
-// // //error
-// // //items.style.backgroundcolor='red';
+// //error
+// //items.style.backgroundcolor='red';
 
-// for(var i=0;i<items.length;i++)
-// {
-// //     items[i].style.fontWeight= 'bold';
-// //     items[i].style.color='yellow';
-//  }
+for(var i=0;i<items.length;i++)
+{
+    items[i].style.fontWeight= 'bold';
+    items[i].style.color='yellow';
+ }
 
 //GETELEMENTTAGNAME
  
- var li=document.createElement('li');
+ var li=document.getElementsByTagName('li');
 console.log(li);
 console.log(li[1]);
-// li[1].textContent= 'Hello2';
-// li[1].style.fontWeight= 'bold';
-// li[1].style.backgroundColor= 'yellow';
-// const node = document.createElement("li");
-// const textnode = document.createTextNode("it");
-li.appendChild('it');
+li[1].textContent= 'Hello2';
+li[1].style.fontWeight= 'bold';
+li[1].style.backgroundColor= 'yellow';
+const node = document.createElement("li");
+node.appendChild(textnode);
 
 
 
