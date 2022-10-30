@@ -32,8 +32,8 @@
 var items=document.getElementsByClassName('list-group-item');
 console.log(items);
 console.log(items[1]);
-//items[1].textContent= 'Hello2';
-//items[1].style.fontWeight= 'bold';
+items[1].textContent= 'Hello2';
+items[1].style.fontWeight= 'bold';
 items[2].style.backgroundColor= 'green';
 
 // //error
@@ -45,25 +45,25 @@ for(var i=0;i<items.length;i++)
     items[i].style.color='yellow';
  }
 
+//GETELEMENTTAGNAME
+ 
+ var li=document.getElementsByTagName('li');
+console.log(li);
+console.log(li[1]);
+li[1].textContent= 'Hello2';
+li[1].style.fontWeight= 'bold';
+li[1].style.backgroundColor= 'yellow';
+li.app
 
- //GETELEMENTBYTAGNAME
+// //error
+//items.style.backgroundcolor='red';
 
-//  var li=document.getElementsByTagName('li');
-// console.log(li);
-// console.log(li[1]);
-// li[1].textContent= 'Hello2';
-// li[1].style.fontWeight= 'bold';
-// li[1].style.backgroundColor= 'yellow';
+for(var i=0;i<li.length;i++)
+{
+    li[i].style.backgroundColor='#f4f4f4';
+ }
 
-// // //error
-// //items.style.backgroundcolor='red';
+//QUARYSELECTOR
 
-// for(var i=0;i<li.length;i++)
-// {
-//     li[i].style.backgroundColor='#f4f4f4';
-//  }
-
-// //QUARYSELECTOR
-
-// var header=document.querySelector('#main-header');
-// header.style.borderBottom='solid 4px #000';
+var header=document.querySelector('#main-header');
+header.style.borderBottom='solid 4px #000';
