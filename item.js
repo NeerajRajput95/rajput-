@@ -87,7 +87,7 @@
 //  var thirditem=document.querySelector('.list-group-item:nth-child(3)');
 //  thirditem.style.visibility='hidden';
 
-//QUERYSELECTORALL
+// //QUERYSELECTORALL
 // var titles=document.querySelectorAll('.title');
 // console.log(titles);
 // titles[0].textContent='Hello';
@@ -95,20 +95,74 @@
 // var odd=document.querySelectorAll('li:nth-child(odd)');
 // var even=document.querySelectorAll('li:nth-child(even)');
 
-// // for(var i=0;i<odd.length;i++)
-// // {
+// for(var i=0;i<odd.length;i++)
+// {
 //     odd[i].style.backgroundColor='#f4f4f4';
 //     even[i].style.backgroundColor='#ccc';
-// // }
-var seconditm=document.querySelectorAll('.list-group-item');
-//console.log(seconditm);
-seconditm[1].style.color='green';
+// }
+// var seconditm=document.querySelectorAll('.list-group-item');
+// //console.log(seconditm);
+// seconditm[1].style.color='green';
 
-var odd=document.querySelectorAll('li:nth-child(odd)');
+// var odd=document.querySelectorAll('li:nth-child(odd)');
 
-for(var i=0;i<odd.length;i++)
-{
-    odd[i].style.backgroundColor='green';
+// for(var i=0;i<odd.length;i++)
+// {
+//     odd[i].style.backgroundColor='green';
    
-}
+// }
+
+//transversing the DOM//
+var itemslist=document.querySelector('#items');
+//perent node
+// console.log(itemslist.parentNode);
+// itemslist.parentNode.style.backgroundColor='#f4f4f4';
+// // console.log(itemslist.parentNode.parentNode);
+// //perent element
+// console.log(itemslist.parentElement);
+// itemslist.parentElement.style.backgroundColor='#f4f4f4';
+// console.log(itemslist.parentElement.parentElement);
+
+// //childnode
+// //console.log(itemslist.childNodes);
+// console.log(itemslist.children);
+// console.log(itemslist.children[1]);
+// itemslist.children[1].style.backgroundColor='yellow';
+// //firstchild
+// console.log(itemslist.firstChild);
+// //firstelementchild
+// console.log(itemslist.firstElementChild);
+// itemslist.firstElementChild.textContent='Hello1';
+
+//lastchild
+// console.log(itemslist.lastChild);
+//lastelementchild
+// console.log(itemslist.lastElementChild);
+// itemslist.lastElementChild.textContent='Hello4';
+//nextsiblings
+// console.log(itemslist.nextSibling);
+// //nextelementsiblings
+// console.log(itemslist.nextElementSibling);
+//previousSibling
+// console.log(itemslist.previousSibling);
+// //previousElementSiblings
+// console.log(itemslist.previousElementSibling);
+// itemslist.previousElementSibling.style.color='green';
+
+//create element
+
+//create a div
+
+var newdiv=document.createElement('div');
+newdiv.className='Hello';
+
+newdiv.id='Hello1';
+//add attribute
+newdiv.setAttribute('title','Hello Div');
+
+//crreate text node
+var newdivtext=document.createTextNode('Hello world');
+//add text in div
+newdiv.appendChild(newdivtext);
+console.log(newdiv);
 
